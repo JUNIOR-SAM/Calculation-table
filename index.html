@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>SAM CALCULATION TABLE</h2>
+    <div class="container">
+      <div class="box">
+        <div>
+          <h6>ROW</h6>
+          <input type="number" id="value1" />
+        </div>
+        <div>
+          <h6>COLUMN</h6>
+          <input type="number" id="value2" />
+        </div>
+      </div>
+      <select name="" id="number">
+        <option value="">Select an Operation</option>
+        <option value="multiply">MULTIPLY</option>
+        <option value="division">DIVISION</option>
+        <option value="add">ADDITION</option>
+        <option value="subtract">SUBTRACTION</option>
+      </select>
+      <button onclick="evaluationSite()">Generate</button>
+      <!-- <div class="menu" id="menu">
+    <button onclick="multiplicationSite()">Multiplication</button> <br>
+    <button onclick="additionSite()">Addition</button> <br>
+    <button onclick="divisionSite()">Division</button> <br>
+    <button onclick="subtractionSite()">Subtraction</button> <br>
+    </div> -->
+      <div id="product"> </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
