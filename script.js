@@ -45,17 +45,23 @@ function evaluationSite() {
     for (j = 1; j <= proValue2; j++) {
       let h1 = document.createElement("p");
 
-      if (operator == "multiply"){
-        result = `${i}*${j}&nbsp;=&nbsp;${i * j} `;
-      } else if (operator == "division") {
-        result = `${i}/${j}&nbsp;=&nbsp;${(i / j) .toFixed(2)}`;
-      } else if (operator == "add") {
-        result = `${i}+${j}&nbsp;=&nbsp;${i + j}`;
-      } else if (operator == "subtract") {
-        result = `${i}-${j}&nbsp;=&nbsp;${i - j}`;
-      } else  {
-        result = "input your number";
+if (proValue1 === "" && proValue2 === "") {
+        alert("Please enter a value in the input field")
       }
+
+    else if (operator == "multiply") {
+        result = `${i}*${j}&nbsp;=&nbsp;${i * j} `;
+      }   else if (operator == "division") {
+        result = `${i}/${j}&nbsp;=&nbsp;${(i / j).toFixed(2)}`;
+      } else if (operator == "addition") {
+        result = `${i}+${j}&nbsp;=&nbsp;${i + j}`;
+      } else if (operator == "subtract") {  
+        result = `${i}-${j}&nbsp;=&nbsp;${i - j}`;
+      }
+      else{
+        alert("select an operation");
+      }
+
       h1.innerHTML = result;
       h1.style.padding = "0px 10px";
       div1.appendChild(h1);

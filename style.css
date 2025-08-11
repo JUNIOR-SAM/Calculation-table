@@ -21,36 +21,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-direction: row;
-    flex-wrap: nowrap; */
+  /* flex-direction: row; */
 }
-p {
+
+p{
   font-size: 20px;
-  font-weight: 600;
   color: white;
+  font-weight: bold;
   margin-top: 10px;
 }
-/* p::after,
-p::before{
-    content: "`";
-} */
-/* .menu{
-    display: none;
-}
-
-.menu #menu{
-display: flex;
-flex-direction: row;
-} */
 
 input {
-  width: 130px;
+  width: 170px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #000;
   padding-left: 10px;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: bold;
   margin-bottom: 10px;
   border: 2px solid blue;
 }
@@ -69,18 +57,28 @@ h6 {
 
 select {
   border-radius: 5px;
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 170px;
   margin-right: 20px;
   border: 2px solid blue;
+  padding-left: 10px;
 }
 
 button {
-  width: 100px;
+  width: 160px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: blue;
   color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button:hover{
+  transition: 0.2s;
+  transform: rotate(120deg);
+  transform: scale(1.1);
+
 }
 
 h2 {
