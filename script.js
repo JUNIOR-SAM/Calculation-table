@@ -45,9 +45,12 @@ function evaluationSite() {
     for (j = 1; j <= proValue2; j++) {
       let h1 = document.createElement("p");
 
-if (proValue1 === "" && proValue2 === "") {
+if (proValue1 === "" && proValue2 === "" && operator === "") {
         alert("Please enter a value in the input field")
       }
+      // if(operator === ""){
+      //   alert("select an operation")
+      // }
 
     else if (operator == "multiply") {
         result = `${i}*${j}&nbsp;=&nbsp;${i * j} `;
@@ -58,9 +61,9 @@ if (proValue1 === "" && proValue2 === "") {
       } else if (operator == "subtract") {  
         result = `${i}-${j}&nbsp;=&nbsp;${i - j}`;
       }
-      // else{
-      //   alert("select an operation");
-      // }
+      else{
+        alert("select an operation");
+      }
 
       h1.innerHTML = result;
       h1.style.padding = "0px 10px";
