@@ -58,9 +58,9 @@ if (proValue1 === "" && proValue2 === "") {
       } else if (operator == "subtract") {  
         result = `${i}-${j}&nbsp;=&nbsp;${i - j}`;
       }
-      else{
-        alert("select an operation");
-      }
+      // else{
+      //   alert("select an operation");
+      // }
 
       h1.innerHTML = result;
       h1.style.padding = "0px 10px";
