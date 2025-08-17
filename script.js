@@ -76,6 +76,7 @@ if (proValue1 === "" && proValue2 === "" && operator === "") {
     div1.style.margin="7px"  ; 
     div1.style.padding="7px"  ; 
     div1.style.border="3px solid yellow" ; 
+    div1.style.marginBottom="15px" ; 
   }
 }
 
